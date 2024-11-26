@@ -1,0 +1,99 @@
+:root {
+  --Bar-radius: 10px;
+  --Bar-radius-inside: 6px;
+
+  --background-inside: hsl(0, 0%, 96%);
+  --bar-height: 60px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: min(100px, 9vw);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: min(40px, 8vw);
+  opacity: 40%;
+}
+
+#url-bar {
+  width: 90%;
+  height: 60px;
+
+  margin: 0 auto;
+
+  background: none;
+  border-radius: var(--Bar-radius);
+
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  aspect-ratio: 1/1;
+  background-color: var(--background-inside);
+}
+
+#copy {
+  border-radius: var(--Bar-radius);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#info {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  background-color: var(--background-inside);
+  border-radius: 10px;
+
+  border: 3px solid black;
+}
+
+.container {
+  display: flex;
+  align-items: stretch; /* Sørger for at tekstboksen fyller containerens høyde */
+  gap: 8px;
+  width: min(800px, 90%);
+  height: var(--bar-height);
+  margin: 0 auto;
+}
+
+.textbox {
+  flex: 1;
+  min-width: 0; /* Hindrer at tekstboksen sprenger ut av containeren */
+
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: var(--background-inside);
+
+  border-radius: var(--Bar-radius) var(--Bar-radius-inside) var(--Bar-radius-inside) var(--Bar-radius);
+}
+
+button {
+  width: var(--bar-height); /* Sett ønsket bredde */
+  height: var(--bar-height); /* Samme som bredde for å beholde 1:1 forhold */
+
+  padding: 0; /* Fjerner ekstra padding */
+  font-size: 1em; /* Justerer tekststørrelsen */
+  background-color: var(--background-inside);
+}
