@@ -1,4 +1,4 @@
-const url = "https://cheese7856.github.io/Copy/copy?string=";
+const url= "https://cheese7856.github.io/Copy/copy?string=";
 
 function copyText() {
   // Hent teksten fra input-feltet
